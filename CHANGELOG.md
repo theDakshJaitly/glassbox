@@ -8,6 +8,7 @@ Format entries under version or date headings and use sections such as `Added`, 
 
 ### Changed
 
+- Enforced LF line endings for tracked files under `.mex/`.
 - Ignored the generated MEX graph database and its SQLite/MEX sidecar files.
 
 ### Added

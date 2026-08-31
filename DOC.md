@@ -32,6 +32,7 @@ pnpm clean       # Clean TypeScript build output
 - `agent-docs/` — mandatory coding-agent guidelines.
 - `AGENTS.md` — root instruction file binding agents to the guidelines.
 - `.mex/` — AI context scaffold with a session router, project/domain context, grounded task runbooks, and a generated code graph.
+- `.gitattributes` — enforces LF line endings for all tracked files under `.mex/`.
 - `.github/pull_request_template.md` — pull request checklist for docs, changelog, validation, and review notes.
 
 ## AI context scaffold
