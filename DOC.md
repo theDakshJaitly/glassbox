@@ -6,7 +6,7 @@ Glassbox is an observability tool for AI agent memory and context. It is intende
 
 Use this document as the complete app documentation page. Any meaningful change to behavior, commands, configuration, architecture, public APIs, or workflows must update this file.
 
-## Quick initialize
+## Quick start
 
 ```bash
 pnpm install
