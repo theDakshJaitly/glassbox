@@ -20,10 +20,22 @@ edges:
     condition: when understanding why the architecture is structured this way
 grounds_to: []
 last_updated: 2026-08-31
+mex:
+  id: mx_01M1C0Q69HRCD5JT845SBZPTAK
+  type: architecture
+  status: promoted
+  revision: 1
+  title: architecture
 ---
 
 # Architecture
 
+<!-- mex:entity
+id: mx_01M1C0Q68HFXC11Q523AVG5KBD
+type: component
+status: promoted
+revision: 1
+-->
 ## System Overview
 
 Claude Code JSONL on disk → `@glassbox/adapter-claude-code` discovery and normalization → `@glassbox/core` session model.
@@ -33,6 +45,12 @@ Reclaimable report + snapshot → pure eviction/compaction plans → adapter-own
 Candidate fork → structural comparison with the original → confirmation → a new session-id-named JSONL file; the source remains untouched.
 Separately, adapter discovery → `@glassbox/store` incremental sync → local SQLite metadata/model cache → `sessions` and `watch` workflows.
 
+<!-- mex:entity
+id: mx_01M1C0Q67JG225JWJNJW9Y6X82
+type: component
+status: promoted
+revision: 1
+-->
 ## Key Components
 
 - **`@glassbox/core`** — tool-neutral domain types and ports for sessions, adapters, token counting, repository state, context snapshots, and costs; depends on no raw Claude format knowledge.
@@ -41,6 +59,12 @@ Separately, adapter discovery → `@glassbox/store` incremental sync → local S
 - **`@glassbox/store`** — persists normalized sessions and freshness fingerprints in SQLite and performs incremental sync/watch through the core `Adapter` port.
 - **`@glassbox/cli`** — command dispatcher and terminal rendering; composes adapters, analysis, filesystem state, storage, validation, confirmations, and writes.
 
+<!-- mex:entity
+id: mx_01M1C0Q66F6RNBBGJBNGT37P3N
+type: component
+status: promoted
+revision: 1
+-->
 ## External Dependencies
 
 - **Claude Code transcript storage** — current input source under `~/.claude/projects`; Glassbox discovers and reads `.jsonl` sessions locally.
@@ -48,6 +72,12 @@ Separately, adapter discovery → `@glassbox/store` incremental sync → local S
 - **SQLite** — local session index, opened through Node's built-in `node:sqlite`; default CLI path is `~/.glassbox/index.db`.
 - **Anthropic API** — conditionally used by `bench` and Tier 3 compact summarization; requires `ANTHROPIC_API_KEY` and is not needed for inspection or lossless cleaning.
 
+<!-- mex:entity
+id: mx_01M1C0Q643NP1MCFCDW7A3NAYC
+type: component
+status: promoted
+revision: 1
+-->
 ## What Does NOT Exist Here
 
 - No server, hosted database, browser UI, or telemetry path is part of the inspected application flow; the product is a local CLI.

@@ -31,7 +31,16 @@ pnpm clean       # Clean TypeScript build output
 - `assets/` — project assets.
 - `agent-docs/` — mandatory coding-agent guidelines.
 - `AGENTS.md` — root instruction file binding agents to the guidelines.
+- `.mex/` — AI context scaffold with a session router, project/domain context, grounded task runbooks, and a generated code graph.
 - `.github/pull_request_template.md` — pull request checklist for docs, changelog, validation, and review notes.
+
+## AI context scaffold
+
+Coding agents should begin with `.mex/ROUTER.md`, load the routed context and matching pattern, and use `.mex/graph.db` through `mex graph` for implementation discovery. The scaffold contains dedicated context for transcript analysis, cleaning/compaction safety, and local session indexing. Behavioral claims in deep-domain and pattern files are grounded to code-graph node ids and fingerprints so drift can be detected.
+
+The generated `.mex/graph.db` and its SQLite/MEX sidecars are local artifacts ignored by Git; rebuild them with `mex graph` when needed.
+
+When behavior or architecture changes, update the affected `.mex/context/` file, the router's current project state when applicable, and any recurring-task pattern. Keep scaffold `last_updated` fields and cross-file edges current.
 
 ## Documentation requirements
 

@@ -24,6 +24,12 @@ last_updated: 2026-08-31
 
 ## Decision Log
 
+<!-- mex:entity
+id: mx_01M1C0Q6M68ZRD47ZGPRB7EBQE
+type: decision
+status: promoted
+revision: 1
+-->
 ### Normalize tool transcripts behind adapters
 
 **Date:** 2026-06-05
@@ -33,6 +39,12 @@ last_updated: 2026-08-31
 **Alternatives considered:** Let each analyzer parse raw JSONL (rejected because it duplicates schema knowledge and prevents tool-neutral reuse).
 **Consequences:** Raw Claude event fields belong only in `@glassbox/adapter-claude-code`; new tools require adapters, not forks of the analysis layer.
 
+<!-- mex:entity
+id: mx_01M1C0Q6K2BQT60PGTG03ZBKKV
+type: decision
+status: promoted
+revision: 1
+-->
 ### Keep reconstruction factual and classification stateful
 
 **Date:** 2026-06-05
@@ -42,6 +54,12 @@ last_updated: 2026-08-31
 **Alternatives considered:** Classify while reconstructing (rejected because it couples a reusable value projection to I/O and time-sensitive verdicts).
 **Consequences:** Add new segment sources in context reconstruction, add evidence rules in reclaimable analysis, and keep both independently testable.
 
+<!-- mex:entity
+id: mx_01M1C0Q6HWJQNCN91DVRGTC3MY
+type: decision
+status: promoted
+revision: 1
+-->
 ### Clean by forking and tombstoning
 
 **Date:** 2026-06-07
@@ -51,6 +69,12 @@ last_updated: 2026-08-31
 **Alternatives considered:** In-place mutation (rejected as unsafe), deleting whole messages/results (rejected as structurally invalid), summarization as the default (rejected because it can lose needed information).
 **Consequences:** The adapter owns raw rewrites; the CLI must validate before writing, confirm unless explicitly bypassed, use a fresh session id, and re-parse the result.
 
+<!-- mex:entity
+id: mx_01M1C0Q6GMRB0HE1VDA4WPMFK2
+type: decision
+status: promoted
+revision: 1
+-->
 ### Use an incremental local SQLite index
 
 **Date:** 2026-06-05

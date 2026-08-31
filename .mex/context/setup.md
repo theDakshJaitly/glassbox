@@ -17,6 +17,16 @@ edges:
     condition: when configuring API-backed compact or bench workflows
 grounds_to: []
 last_updated: 2026-08-31
+mex:
+  id: mx_01M1C0Q6RWXNKMPNYTXHSBYBQT
+  type: guide
+  status: promoted
+  revision: 2
+  title: setup
+  relations:
+    - type: related_to
+      target: mx_01M1C0Q69HRCD5JT845SBZPTAK
+      note: when understanding what build and CLI commands compose
 ---
 
 # Setup
@@ -33,12 +43,24 @@ last_updated: 2026-08-31
 2. `pnpm build`
 3. `pnpm test`
 
+<!-- mex:entity
+id: mx_01M1C0Q6QSN6K10YW957DCAQJC
+type: guide
+status: promoted
+revision: 1
+-->
 ## Environment Variables
 
 - Required: none for build, test, inspection, cost analysis, indexing, or lossless cleaning.
 - `ANTHROPIC_API_KEY` (conditional) — required by `glassbox bench`; enables Tier 3 summarization during `glassbox compact`, which otherwise continues with Tiers 0–2.
 - Optional: none currently documented.
 
+<!-- mex:entity
+id: mx_01M1C0Q6PM4Q6EM8PHT2119G0H
+type: guide
+status: promoted
+revision: 1
+-->
 ## Common Commands
 
 - `pnpm lint` — run ESLint across the workspace.
@@ -49,6 +71,12 @@ last_updated: 2026-08-31
 - `pnpm clean` — clean TypeScript build output.
 - `pnpm format` — rewrite repository formatting with Prettier.
 
+<!-- mex:entity
+id: mx_01M1C0Q6NFHNWV3FWWZ9TC7G76
+type: guide
+status: promoted
+revision: 1
+-->
 ## Common Issues
 
 **No sessions found:** Real CLI workflows discover Claude Code sessions under `~/.claude/projects`; provide an explicit `.jsonl` locator or ensure Claude Code has created sessions there.

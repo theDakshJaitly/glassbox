@@ -6,8 +6,13 @@ Format entries under version or date headings and use sections such as `Added`, 
 
 ## Unreleased
 
+### Changed
+
+- Ignored the generated MEX graph database and its SQLite/MEX sidecar files.
+
 ### Added
 
+- Populated the `.mex/` AI context scaffold with project routing, architecture/stack/convention/setup/decision references, grounded domain guides, and starter task/debug patterns.
 - Added mandatory coding-agent guidelines in `agent-docs/AGENT_GUIDELINES.md`.
 - Added root `AGENTS.md` to bind agents to repository guidelines.
 - Added baseline `DOC.md` app documentation.

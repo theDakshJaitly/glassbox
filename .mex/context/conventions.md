@@ -21,10 +21,32 @@ edges:
     condition: when adding a context source, verdict, or cost calculation
 grounds_to: []
 last_updated: 2026-08-31
+mex:
+  id: mx_01M1C0Q6F95ADKDD16NSJ97510
+  type: convention
+  status: promoted
+  revision: 4
+  title: conventions
+  relations:
+    - type: related_to
+      target: mx_01M1C0Q69HRCD5JT845SBZPTAK
+      note: when a convention depends on understanding package responsibilities
+    - type: related_to
+      target: mx_01M1C0Q6SYGZ3YF2SMD1X89DAP
+      note: when extending Claude Code normalization
+    - type: related_to
+      target: mx_01M1C0Q6W77FPJ10C2J2456PV4
+      note: when adding a context source, verdict, or cost calculation
 ---
 
 # Conventions
 
+<!-- mex:entity
+id: mx_01M1C0Q6E3A60HXPPNYYSNBKM5
+type: convention
+status: promoted
+revision: 1
+-->
 ## Naming
 
 - Files and package folders use kebab-case (`context-snapshot.ts`, `session-index.ts`, `adapter-claude-code`).
@@ -33,6 +55,12 @@ last_updated: 2026-08-31
 - Core identifiers use branded types and `as…` constructors (`asSessionId`, `asMessageId`, `asIsoTimestamp`) instead of passing arbitrary strings across model boundaries.
 - Constants that define policy sets use upper snake case (`PROVABLE_CLASSES`, `TIER1_CLASSES`, `RECLAIMABLE_STATUSES`).
 
+<!-- mex:entity
+id: mx_01M1C0Q6CZKXJZBNYZ0WVDTV1K
+type: convention
+status: promoted
+revision: 1
+-->
 ## Structure
 
 - `packages/core` owns tool-neutral model contracts and ports; it must not learn Claude Code JSONL details or touch filesystem/git to classify data.
@@ -42,6 +70,12 @@ last_updated: 2026-08-31
 - `packages/cli` is the orchestration and rendering boundary. Keep reusable parsing, analysis, transformation, and storage logic in their owning packages.
 - ESM TypeScript imports use emitted `.js` specifiers, including relative imports such as `./parse.js`.
 
+<!-- mex:entity
+id: mx_01M1C0Q6BWZ83X0PNPGXSSPTE8
+type: convention
+status: promoted
+revision: 1
+-->
 ## Patterns
 
 Keep raw-format concerns behind the adapter boundary:
@@ -67,6 +101,12 @@ Provider usage is authoritative for cost; the injected `TokenCounter` estimate i
 
 Transcript transformations must preserve JSONL lines they do not understand, maintain `tool_use`/`tool_result` pairs and `parentUuid` structure, compare validation problems before/after, and write only a new session file.
 
+<!-- mex:entity
+id: mx_01M1C0Q6AMB0WA9SQY119XY751
+type: convention
+status: promoted
+revision: 1
+-->
 ## Verify Checklist
 
 Before presenting any code:
