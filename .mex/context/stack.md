@@ -18,6 +18,22 @@ edges:
     condition: when using Node SQLite or filesystem watching
 grounds_to: []
 last_updated: 2026-08-31
+mex:
+  id: mx_01M1EXP2J6VE5VACV0N83WSG3J
+  type: architecture
+  status: promoted
+  revision: 4
+  title: stack
+  relations:
+    - type: related_to
+      target: mx_01M1C0Q69HRCD5JT845SBZPTAK
+      note: when a technology's role in the end-to-end flow matters
+    - type: related_to
+      target: mx_01M1C0Q6F95ADKDD16NSJ97510
+      note: when understanding how to use a technology in this codebase
+    - type: related_to
+      target: mx_01M1EXP2ABM1P7M325JHB1CHE7
+      note: when using Node SQLite or filesystem watching
 ---
 
 # Stack

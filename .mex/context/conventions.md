@@ -25,7 +25,7 @@ mex:
   id: mx_01M1C0Q6F95ADKDD16NSJ97510
   type: convention
   status: promoted
-  revision: 4
+  revision: 6
   title: conventions
   relations:
     - type: related_to
@@ -37,6 +37,12 @@ mex:
     - type: related_to
       target: mx_01M1C0Q6W77FPJ10C2J2456PV4
       note: when adding a context source, verdict, or cost calculation
+    - type: related_to
+      target: mx_01M1EXP2TK06FQH01Y1S5691Z8
+      note: when adding parser or analyzer behavior and tests
+    - type: related_to
+      target: mx_01M1EXP1WA69DT2C57EJVHN8WT
+      note: when a change can affect transcript safety or losslessness
 ---
 
 # Conventions

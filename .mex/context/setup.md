@@ -21,12 +21,18 @@ mex:
   id: mx_01M1C0Q6RWXNKMPNYTXHSBYBQT
   type: guide
   status: promoted
-  revision: 2
+  revision: 4
   title: setup
   relations:
     - type: related_to
       target: mx_01M1C0Q69HRCD5JT845SBZPTAK
       note: when understanding what build and CLI commands compose
+    - type: related_to
+      target: mx_01M1EXP2J6VE5VACV0N83WSG3J
+      note: when specific runtime or tool versions are needed
+    - type: related_to
+      target: mx_01M1EXP1WA69DT2C57EJVHN8WT
+      note: when configuring API-backed compact or bench workflows
 ---
 
 # Setup

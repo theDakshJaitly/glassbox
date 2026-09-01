@@ -16,7 +16,7 @@ mex:
   id: mx_01M1C0Q6SYGZ3YF2SMD1X89DAP
   type: pattern
   status: promoted
-  revision: 2
+  revision: 3
   title: add-transcript-parsing
   grounds_to:
     - node: function:0efb013f713a5e702da7fe74750295d3
@@ -25,6 +25,9 @@ mex:
     - type: related_to
       target: mx_01M1C0Q6YP6H9RQ4AG09NWK6MM
       note: when the parser change also affects fork validation or re-parsing
+    - type: related_to
+      target: mx_01M1EXP2TK06FQH01Y1S5691Z8
+      note: always load before changing normalization behavior
 ---
 
 # Add Transcript Parsing

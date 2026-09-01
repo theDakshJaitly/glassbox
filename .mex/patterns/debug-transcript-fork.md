@@ -18,7 +18,7 @@ mex:
   id: mx_01M1C0Q6YP6H9RQ4AG09NWK6MM
   type: pattern
   status: promoted
-  revision: 3
+  revision: 4
   title: debug-transcript-fork
   grounds_to:
     - node: function:8a8fee82b46da0a3d691d4913f234067
@@ -32,6 +32,9 @@ mex:
     - type: related_to
       target: mx_01M1C0Q6SYGZ3YF2SMD1X89DAP
       note: when parser and fork-writer disagree about raw payload location
+    - type: related_to
+      target: mx_01M1EXP1WA69DT2C57EJVHN8WT
+      note: always load for cleaning invariants and write gates
 ---
 
 # Debug Transcript Forks

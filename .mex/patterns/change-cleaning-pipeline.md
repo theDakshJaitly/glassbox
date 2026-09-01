@@ -18,7 +18,7 @@ mex:
   id: mx_01M1C0Q6V1FCYQ31BF4YQQRYA0
   type: pattern
   status: promoted
-  revision: 3
+  revision: 4
   title: change-cleaning-pipeline
   grounds_to:
     - node: function:a60f01ded9e82a451126abd7ad5eef63
@@ -32,6 +32,9 @@ mex:
     - type: related_to
       target: mx_01M1C0Q6W77FPJ10C2J2456PV4
       note: when eligibility depends on a new or changed analyzer verdict
+    - type: related_to
+      target: mx_01M1EXP1WA69DT2C57EJVHN8WT
+      note: always load before changing cleaning or compaction
 ---
 
 # Change the Cleaning Pipeline

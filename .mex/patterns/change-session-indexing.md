@@ -16,7 +16,7 @@ mex:
   id: mx_01M1C0Q6XE1GZNSPFXJS56DQDJ
   type: pattern
   status: promoted
-  revision: 2
+  revision: 3
   title: change-session-indexing
   grounds_to:
     - node: method:7ab7b4ee54d6774ba2738b45cbf95729
@@ -25,6 +25,9 @@ mex:
     - type: related_to
       target: mx_01M1C0Q6SYGZ3YF2SMD1X89DAP
       note: when normalized Session shape or adapter discovery changes
+    - type: related_to
+      target: mx_01M1EXP2ABM1P7M325JHB1CHE7
+      note: always load before changing store or indexing behavior
 ---
 
 # Change Session Indexing

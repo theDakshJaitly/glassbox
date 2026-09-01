@@ -16,7 +16,7 @@ mex:
   id: mx_01M1C0Q6W77FPJ10C2J2456PV4
   type: pattern
   status: promoted
-  revision: 2
+  revision: 3
   title: change-context-analysis
   grounds_to:
     - node: function:80836b3aa8e46550bf1c4ecf6d64de86
@@ -28,6 +28,9 @@ mex:
       target: mx_01M1C0Q6V1FCYQ31BF4YQQRYA0
       note: when a verdict or segment-origin change affects eviction eligibility or
         location
+    - type: related_to
+      target: mx_01M1EXP2TK06FQH01Y1S5691Z8
+      note: always load before changing analysis behavior
 ---
 
 # Change Context Analysis

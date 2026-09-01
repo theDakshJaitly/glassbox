@@ -24,8 +24,23 @@ mex:
   id: mx_01M1C0Q69HRCD5JT845SBZPTAK
   type: architecture
   status: promoted
-  revision: 1
+  revision: 5
   title: architecture
+  relations:
+    - type: related_to
+      target: mx_01M1EXP2TK06FQH01Y1S5691Z8
+      note: when changing transcript parsing, context reconstruction, cost, or
+        reclaimable classification
+    - type: related_to
+      target: mx_01M1EXP1WA69DT2C57EJVHN8WT
+      note: when changing clean/compact behavior or transcript fork safety
+    - type: related_to
+      target: mx_01M1EXP2ABM1P7M325JHB1CHE7
+      note: when changing the SQLite index, incremental sync, session listing, or file
+        watching
+    - type: related_to
+      target: mx_01M1EXP2J6VE5VACV0N83WSG3J
+      note: when specific technology details are needed
 ---
 
 # Architecture
