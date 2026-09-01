@@ -1,8 +1,8 @@
 ---
 schema_version: 3
 id: "relay_01M1F5SXRV6SFEAE0FHFQBNGWP"
-mex: {"id":"relay_01M1F5SXRV6SFEAE0FHFQBNGWP","revision":1,"status":"promoted","summary":"Testing Mex 0.7.3 workflows against the Glassbox repository.","title":"Relay relay_01M1F5SXRV6SFEAE0FHFQBNGWP","type":"relay"}
-state: "published"
+mex: {"id":"relay_01M1F5SXRV6SFEAE0FHFQBNGWP","revision":3,"status":"archived","summary":"Testing Mex 0.7.3 workflows against the Glassbox repository.","title":"Relay relay_01M1F5SXRV6SFEAE0FHFQBNGWP","type":"relay"}
+state: "closed"
 sender: {"displayName":"theDakshJaitly","kind":"member","memberId":"member_01M1C0FEJQZE758WQ3PWZ66VVV"}
 recipients: [{"displayName":"theDakshJaitly","kind":"member","memberId":"member_01M1C0FEJQZE758WQ3PWZ66VVV"}]
 summary: "Testing Mex 0.7.3 workflows against the Glassbox repository."
@@ -17,4 +17,8 @@ evidence: []
 next_actions: ["Publish this Relay.","Acknowledge and close this Relay.","Test the Inbox workflow."]
 published_at: "2026-09-01T19:05:45.941Z"
 published_repo_state: {"branch":"main","dirty":false,"head":"9088e07145277717daf67eaecc257677240a8f52","observedAt":"2026-09-01T19:05:46.001Z"}
+acknowledged_by: {"displayName":"theDakshJaitly","kind":"member","memberId":"member_01M1C0FEJQZE758WQ3PWZ66VVV"}
+acknowledged_at: "2026-09-01T19:15:01.967Z"
+closed_by: {"displayName":"theDakshJaitly","kind":"member","memberId":"member_01M1C0FEJQZE758WQ3PWZ66VVV"}
+closed_at: "2026-09-01T19:17:44.249Z"
 ---
